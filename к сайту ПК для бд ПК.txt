@@ -1,0 +1,12 @@
+<?
+        if ( isset($_POST['change']) ) {
+        foreach ($_POST['box'] as $value) {
+          if ( $article['ID']==$value ) { ?>
+            <td> <textarea name="PC_name<?=$article['ID']?>" type="text"><?= $article['PC_name'] ?></textarea> </td>   
+          <?} else{ ?>
+        <td><?echo $article['PC_name']?></td> 
+        <?}
+        } 
+      } else{ ?>
+        <td><?echo $article['PC_name']?></td> 
+        <?}?>

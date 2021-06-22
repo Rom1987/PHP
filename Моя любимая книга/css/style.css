@@ -1,0 +1,97 @@
+*::selection {
+    background-color: #f44336;
+    color: white;
+}
+body {
+    background-image: url(https://avatars.mds.yandex.net/get-zen_doc/118604/pub_5ca3454321a86300b4ca7e19_5ca347594117ae00b4d767bf/scale_1200);
+    background-attachment: fixed; /* Фон страницы фиксируется */
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: cover; /* Opera 9.6+ */
+	background-size: cover; /* Современные браузеры */
+	background-position: 50% 50%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: white;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header>div {
+    display: inline-block;
+}
+.tabs>a {
+    margin-right: 50px;
+}
+
+.text {
+    position: absolute;
+    width: 500px;
+    height: 198px;
+    top: 166px;
+    text-align: center;
+
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 25%;
+    color: white;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 87px;
+}
+
+button {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    transition: .3s;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+button:hover {
+    opacity: unset;
+    display: inline-block;
+    background: #55acee;
+    box-shadow: 0 5px 0 #3C93D5;
+}
+
+a {
+    background-image: linear-gradient(#FE5568 50%, #FE5568 50%), linear-gradient(silver 50%, silver 50%); 
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+    background-size: 0 2px, 100% 2px; 
+    color: black; 
+    padding-bottom: 3px; 
+    transition: .5s ease-in-out;
+  }
+  a:hover {
+    background-size: 100% 2px, 100% 2px;
+    color: #FE5568;
+  }
+
+input[name="car_number"] {
+    text-transform: uppercase;
+}
+input[name="car_number"]::-webkit-input-placeholder {
+    text-transform: none;
+}
+@media screen and (max-width: 790px) {
+    a { font-size: 14px; }
+}
+@media screen and (max-width: 800px) {
+    .text { font-size: 40px; width: 380px;}
+}

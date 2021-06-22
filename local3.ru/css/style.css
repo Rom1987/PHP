@@ -1,0 +1,120 @@
+.navbar-brad img {width: 250px;
+height:120px;
+background:url(../img/logo.jpg);}
+
+.navbar-nav li {
+	padding-right: 20px;
+}
+
+.nav-link {font-size: 1.2em !important}
+
+.carousel-inner {
+	height:500px;
+}
+.carousel-inner img {
+	
+	width: 100%;
+	height:100%;
+	
+
+}
+
+@media (min-widht: 1100px){
+.carousel-inner img{
+	width: 100%;
+}
+}
+
+.carousel-caption {
+	position: absolute;
+	top:50%;
+	transform: translatyY (-80%);
+	text-shadow: 1px 1px 10px #000;
+}
+
+@media (max-widht: 450px) {
+.carousel-caption .display-2 {
+font-size: 3em;
+	}
+}
+
+.jumbotron {
+	padding: 1em;
+	border-radius:0;
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.padding {
+	padding-bottom: 2em;
+
+}
+
+.alert {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2em;
+	
+}
+
+.alert hr {
+	border-top: 2px solid #f0f0f0;
+	width:95%;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+
+}
+
+.fa-code {color: ff0000}
+.fa-bold {color: #563d7c}
+.fa-css3 {color: #2163af}
+
+.fa-code, .fa-bold, .fa-css3 {
+	font-size: 4em;
+	margin: 1;
+	
+}
+
+#fixed {
+	height: 400px;
+	border-top: 4px solid #f0f0f0;
+	border-bottom: 4px solid #f0f0f0;
+	background: url("../img/fnbl1.jpg") no-repeat center center fixed;
+	background-blend-mode: multiplay;
+	background-color: lightblue;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+
+.google-pluse a:hover {background: #DD4B39; color: #fff;}
+.twitter a:hover {background: #00acee; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.facebook a:hover {background: #3b5998; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+
+
+
+
+
+
+
+

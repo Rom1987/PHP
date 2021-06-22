@@ -1,0 +1,21 @@
+.block_registration {
+    width: 44.5em;
+    height: 35em;
+    padding-top: 1em;
+}
+.user_date {
+    width: 12.7em;
+}
+
+.error {
+    position: absolute;
+    width: 8.5em;
+    height: 4em;
+    top: 1.5em;
+    left: 33.7em;
+    color: red;
+}
+
+.posit {
+    margin-top: 10px;
+}

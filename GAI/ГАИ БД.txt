@@ -1,0 +1,26 @@
+CREATE DATABASE gai;
+CREATE TABLE Users
+(id_user INT PRIMARY KEY AUTO_INCREMENT,
+email text NOT NULL,
+password text NOT NULL,
+l_f_s text NOT NULL,
+address text NOT NULL,
+date_of_birth date NOT NULL,
+phone varchar(11) NOT NULL
+);
+CREATE TABLE Cars
+(id_car INT PRIMARY KEY AUTO_INCREMENT,
+breeder text NOT NULL,
+model text NOT NULL,
+car_number text NOT NULL,
+category text NOT NULL
+);
+CREATE TABLE Records
+(id_record INT PRIMARY KEY AUTO_INCREMENT,
+record_address text NOT NULL,
+datetime datetime NOT NULL,
+code_user INT(255) NOT NULL,
+code_car INT(255) NOT NULL,
+FOREIGN KEY (code_user) REFERENCES Users (id_user),
+FOREIGN KEY (code_car) REFERENCES Cars (id_car)
+);

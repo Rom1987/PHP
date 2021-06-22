@@ -1,0 +1,211 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+*::selection {
+    background-color: black;
+    color: white;
+}
+body {
+    background: url('../image/index.jpg') no-repeat;
+	background-attachment: fixed; /* Фон страницы фиксируется */
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: cover; /* Opera 9.6+ */
+	background-size: cover; /* Современные браузеры */
+    background-position: 50% 50%;
+    
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding-bottom: 50px;
+ 
+}
+
+header {
+    width: 100%;
+    /* border: 2px inset red; */
+    display: flex;
+    justify-content: space-between;
+}
+header>div {
+    display: inline-block;
+}
+
+.img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.img > a {
+    all: unset;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tabs>a {
+    margin-top: 12px;
+    margin-right: 40px;
+}
+
+.to_come_in, .exit {
+    width: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.inner-wrapper {
+    background-color: rgb(64, 194, 255, 0.5);
+    border-radius: 50px;
+    border: 5px groove rgb(64, 194, 255, 0.5);
+    padding: 1.5vw;
+}
+
+.header_content_account {    
+    text-align: center;
+    background-color: #5bf;
+    color: white;
+    padding: 0.5vw;
+    font-size: 2vw;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    /* font-size: 65px; */
+    font-size: 5vw;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#button {
+    padding: 0px;
+}
+#button:hover {
+    background-color: lawngreen;
+}
+
+button:hover {
+    background-color: #49a04c;
+    box-shadow: 0px 10px 20px #3C93D5;
+}
+
+.button {
+    /* width: 405px;
+    height: 88px; */
+    width: 30vw;
+    height: 6vw;
+
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    background: #55acee;
+    box-shadow: 0 5px 0 #3C93D5;
+    transition: .3s;
+
+    /* font-size: 25px; */
+    font-size: 1.81vw;
+    /* line-height: 30px; */
+}
+
+.button:hover {
+    opacity: unset;
+    display: inline-block;
+    box-shadow: inset 2px 2px 5px rgba(148, 135, 123, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+a, .to_come_in, .exit {
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    /* font-size: 24px; */
+    font-size: 1.5vw;
+    transition: .3s ease-in-out;
+
+    border-bottom: 2px solid #5be;
+    color: rgb(253, 143, 0);
+    background-image: linear-gradient(180deg, transparent 65%, #5bf 65%);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0%;
+}
+
+.to_come_in {
+    color: rgb(44, 196, 44);
+}
+
+.exit {
+    color: #FE5568;
+    border-color: #FE5568;
+    background-image: linear-gradient(180deg, transparent 65%, #FE5568 65%);
+}
+
+a:hover, .to_come_in:hover, .exit:hover {
+    color: black;
+    text-decoration: unset;
+    color: unset;
+    background-size: 100% 100%;
+}
+
+input[name="car_number"] {
+    text-transform: uppercase;
+}
+input[name="car_number"]::-webkit-input-placeholder {
+    text-transform: none;
+}
+
+.welcome {
+    background-color: rgba(85, 187, 255, 0.5);
+    padding: 1vw;
+}
+
+.instruction-tab {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px ridge black;
+}
+.instruction-tab>div:nth-child(-n+2) {
+    background-color: chocolate;
+}
+.instruction-tab>div:not(:nth-child(-n+2)) {
+    border-top: 2px ridge black;
+}
+.instruction-tab>div:nth-child(2n+1) {
+    border-right: 2px ridge black;
+}
+input:not([type="checkbox"]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    border: none;
+    padding: 8px 9px 9px 9px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}

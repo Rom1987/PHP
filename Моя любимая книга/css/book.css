@@ -1,0 +1,22 @@
+body {
+    background-image: url(https://u.livelib.ru/album/1000021644/o/bu5w2dxf/o-o.jpeg);
+    color: white;
+}
+header {
+    margin-bottom: 50px;
+}
+a {
+    color: white; 
+}
+.content {
+    width: auto;
+    height: auto;
+}
+.inner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: justify;
+}
+p::selection {
+    background-color: tomato;
+}

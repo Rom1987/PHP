@@ -1,0 +1,41 @@
+CREATE TABLE Tea
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+name text NOT NULL,
+composition text NOT NULL,
+manufacturer text NOT NULL,
+price int(255) NOT NULL,
+quantity int(255) NOT NULL
+);
+CREATE TABLE Coffee
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+name text NOT NULL,
+composition text NOT NULL,
+manufacturer text NOT NULL,
+price int(255) NOT NULL,
+quantity int(255) NOT NULL
+);
+CREATE TABLE Juice
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+name text NOT NULL,
+composition text NOT NULL,
+manufacturer text NOT NULL,
+price int(255) NOT NULL,
+quantity int(255) NOT NULL
+);
+CREATE TABLE Byuer
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+nickname text NOT NULL,
+password text NOT NULL,
+name text NOT NULL,
+address text NOT NULL,
+number varchar(11) NOT NULL,
+email text NOT NULL
+);
+CREATE TABLE Napitki
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+categoria int(255) NOT NULL,
+categoria_name text NOT NULL,
+FOREIGN KEY (categoria) REFERENCES Tea (ID),
+FOREIGN KEY (categoria) REFERENCES Coffee (ID),
+FOREIGN KEY (categoria) REFERENCES Juice (ID)
+);

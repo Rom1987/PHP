@@ -1,0 +1,26 @@
+[{
+    "product1": {
+        "productName": "first",
+        "productLink": "/first/",
+        "productID": 1,
+        "productPrice": 10
+    },
+    "product2": {
+        "productName": "second",
+        "productLink": "/second/",
+        "productID": 2,
+        "productPrice": 20
+    },
+    "product3": {
+        "productName": "third",
+        "productLink": "/third/",
+        "productID": 3,
+        "productPrice": 30
+    },
+    "product4": {
+        "productName": "forth",
+        "productLink": "/forth/",
+        "productID": 4,
+        "productPrice": 40
+    }
+}]

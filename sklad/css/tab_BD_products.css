@@ -1,0 +1,77 @@
+textarea {
+	background-color: transparent; 
+	color: white; 
+	margin: 0px; 
+	width: 257px; 
+	height: 95px;
+}
+textarea:focus {
+	color: DeepPink; 
+}
+.textarea_name {
+	width: 100px;
+}
+.textarea_categoria_name {
+	color: #C5C6C7;
+	background: transparent;
+	border: 1px inset #C5C6C7;
+	width: 110px;
+}
+.textarea_manufacturer { 
+	width: 100px;
+}
+.textarea_price, .textarea_quantity {
+	width: 65px; 
+	height: 35px;
+}
+
+
+.marg{
+    margin-top: 10%;
+}
+table {
+    table-layout:fixed; 
+    width:1000px;
+}
+.hov:hover {
+	color: DeepPink;
+}
+table td {
+	overflow: hidden;
+}
+table td:nth-of-type(1) {
+	width: 5%;
+}
+table td:nth-of-type(2) {
+	width: 8%;
+}
+table td:nth-of-type(3) {
+	width: 27%;
+}
+table td:nth-of-type(4) {
+	width: 10%;
+}
+table td:nth-of-type(5) {
+	width: 20%;
+}
+table td:nth-of-type(6) {
+	width: 8%;
+}
+table td:nth-of-type(7) {
+	width: 6%;
+}
+table td:nth-of-type(8) {
+	width: 6%;
+}
+table td:nth-of-type(9) {
+	width: 2%;
+}
+@media screen and (max-width: 1180px) {
+	tr, td {display:block;}
+	table td:nth-of-type(1), table td:nth-of-type(2), table td:nth-of-type(3), table td:nth-of-type(4),
+	table td:nth-of-type(5), table td:nth-of-type(6), table td:nth-of-type(7), table td:nth-of-type(8), table td:nth-of-type(9) 
+	{width: 100%;}
+	.textarea_Characteristic, .textarea_IMG {width: 100%;}
+	.textarea_Characteristic {height: 200px;}
+	body {background-size: 200%;}
+}

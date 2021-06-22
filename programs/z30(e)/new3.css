@@ -1,0 +1,11 @@
+.block1{
+background-color:#FFFFFF;
+height:200px;
+width:700px;
+margin: 20 auto;
+color: #800080;
+font-size: 15px;
+border: 1px solid #800080;
+border-radius:0%;
+text-align:center;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&family=Suez+One&display=swap');
+
+
+body {
+    background-image: url(https://www.luxairtours.lu/sites/default/files/styles/slide_images/public/2017-03/lgit_london_02_web_0.jpg?itok=i7d-DraM);
+    background-blend-mode: multiply;
+    background-color: #324969;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    
+    color: #48a1f5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+button:hover {
+ background-color: gray;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    color: #b7625c;
+}
+
+
+label {
+    color: white;
+}

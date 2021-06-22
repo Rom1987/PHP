@@ -1,0 +1,14 @@
+.ltext{
+	margin:0 auto;
+	width:40%;
+	background-color:#c1c1c1;
+}
+.ldantab{
+	margin:0 auto;
+	width:90%;
+	background-color:#c1c1c1;
+}
+.ldantab>caption{
+	margin:0 auto;
+	background-color:#6c6c6c;
+}

@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.img-1, .img-2, .img-3 {
+	border: 4px inset Lavender;
+}
+.img-1 {
+	width: 502px;
+	height: 250px; 
+	margin-bottom: 5px;
+}
+.img-2, .img-3 {
+	width: 250px;
+	height: 150px;
+}
+
+.post-wrap {
+	max-width: 680px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+.post-wrap-test {
+	margin-top: 15%;
+}
+.post-item:hover .post-info {
+	display: block;
+}
+.post-info {
+	display: none;
+	background: linear-gradient(to bottom,rgba(0,0,0,0) 0%, white 100%);
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
+	position: relative;
+	bottom: 22%;
+	width: 100%;
+	transition: 5s linear;
+	border: 4px inset red;
+	border-width: 0 4px 0px 4px;
+}
+
+.post-item:hover img {
+	border-width: 4px 4px 4px 4px;
+}
+
+
+.post-item {
+	padding: 10px;	
+}
+img {
+	height: 350px;
+}
+.post-item-wrap {
+	overflow: hidden;
+	position: relative;
+	border-radius: 5% 5%;
+}
+.post-item img {
+	display: block;
+	width: 100%;
+	border: inset red;
+	border-width: 4px 4px 0px 4px;
+}
+.block-text-img {
+	background: linear-gradient(to top left, Lavender, PeachPuff);
+	border: 4px inset red;
+}
+.post-cat {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	color: black;
+	font-weight: 500;
+}
+.post-title {
+	font-size: 12px;
+	font-weight: 400;
+	color: black;
+	font-style: italic;
+}
+@media (min-width: 768px) {
+	.post-item {
+		flex-basis: 50%;
+		flex-shrink: 0;				
+	}
+}
+@media (min-width: 960px) {
+	.post-item {
+		flex-basis: 33.333333333%;			
+	}
+}

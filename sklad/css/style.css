@@ -1,0 +1,232 @@
+body {
+	background: url(https://img5.goodfon.ru/original/1920x1080/9/96/linii-fon-kraski.jpg);
+	color: white;
+	font-weight: 400;
+	font-size: 0.9em;
+	font-family: Arial, sans-serif;
+	
+	background-attachment: fixed; /* Фон страницы фиксируется */
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: cover; /* Opera 9.6+ */
+	background-size: cover; /* Современные браузеры */
+	background-position: 50% 50%;
+}
+
+.header {
+	position: flex;
+	background-image: linear-gradient(to right,  SteelBlue 0%, #84CEEB 50%, #8860D0 100%);
+	height: 12vh;
+	padding-top: 1em;
+	border-radius: 50% 50%;
+	text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
+}
+
+.block_authorization {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 38em;
+	width: 100%;
+}
+
+/* кнопки аутентификации */
+div>.link, div>button {
+	position: relative;
+	left: -0.25em;
+}
+
+.complete {
+	display: inline-block;
+	margin-right: .5em;
+	color: lime;
+}
+.complete_buy {
+	color: gold;
+}
+.complete_buy:after {
+	content: '\263A';
+	font-size: large;
+}
+
+/* ошибка */
+.error {
+	transform: translate(-50%, -50%);
+	position: absolute; 
+	top: 110%; 
+	left: 50%;
+	color: red;
+	z-index: 5;
+}
+
+/* характеристика ПК */
+.PC_page>h3 {
+	margin-left: 25%;
+}
+.PC {
+	left: 65%;
+	margin-left: -500px;
+	position: relative;
+	width: 600px;
+}
+/* картинка */
+.PC_page>img {
+	border: 5px inset lime;
+	border-radius: 10% 10%;
+}
+.PC_page {
+	width: 25em;
+	height: 50em;
+}
+
+/* Меню */
+svg {
+	position: fixed;
+	top: 4.9em;
+	left: 3.9em;
+	z-index: 1;
+}
+section.menu {
+	position: fixed;
+	margin-left: 3.5em;
+	top: 5.15em;
+	opacity: 0;
+	z-index: 2;
+}
+select.menu, select.menu>option {
+	background-color: Thistle;
+	position: absolute;
+	border: 5px solid #45A29E;
+	border-radius: 50%;
+	color: black;
+	width: 7em;
+	height: 7em;
+}
+
+.products_form_category {
+	background-color: transparent;
+	color:#fff;
+	border: 5px solid #8860D0;
+	width: 13.1em;
+	height: 2em;
+}
+.products_form_category>option {
+	background-color: thistle;
+	color: black;
+}
+
+/* Аутификация, поиск*/
+
+/* убирает лини при фокусе input */
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input::placeholder {
+	color: white;
+}
+input {
+	background-color: transparent;
+	color:#fff;
+	margin: 1px;
+	border: 5px solid SlateBlue;
+	height: 2em;
+}
+
+input:focus {
+	border: 5px solid #8860D0;
+	background-color: #84CEEB;
+}
+.button_search {
+	position: absolute;
+	top: 6em;
+	right: 0em;
+}
+
+/* Button */
+button {
+	text-decoration: none; /* отключает анимацию по умолчанию */
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 1px 4px;
+	margin: 5px 10px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #8860D0 0%, #84CEEB 51%, #5AB9EA 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: .9s;
+  }
+button:hover {
+	background-position: right center;
+}
+
+/* Ссылки */
+
+a {
+	text-decoration: none; 
+	outline: none;
+	color: white;
+}
+a:hover {
+	text-decoration: none; 
+	outline: none;
+	color: white;
+}
+a.link {
+	text-decoration: none; /* отключает анимацию по умолчанию */
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 2px 22px;
+	margin: 5px 10px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image:  linear-gradient(to right, #8860D0 0%, #84CEEB 51%, #5AB9EA 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: 0.9s;
+  }
+a.link:hover {
+	text-decoration: none;
+	color: white;
+	background-position: right center;
+}
+.link_in_page {
+	text-decoration: none; /* отключает анимацию по умолчанию */
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 2px 8px;
+	margin: 5px 5px;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image:  linear-gradient(to right, #8860D0 0%, #84CEEB 51%, #5AB9EA 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: 0.9s;
+}
+
+/* кнопка с категорией #0C0032 – #190061 – #240090 – #3500D3*/
+.category {
+	background-image:  linear-gradient(to right, #8860D0 0%, #84CEEB 51%, #5AB9EA 100%);
+	width: 5em;
+	height: 2em;
+	color: white;
+}
+
+.block_category {
+	position: fixed;
+	margin-top: 50em;
+	margin-left: 4em;
+	z-index: 10;
+}

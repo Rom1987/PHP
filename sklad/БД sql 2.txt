@@ -1,0 +1,29 @@
+CREATE TABLE Byuer
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+nickname text NOT NULL,
+password text NOT NULL,
+name text NOT NULL,
+address text NOT NULL,
+number varchar(11) NOT NULL,
+email text NOT NULL
+);
+CREATE TABLE Napitki
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+name text NOT NULL,
+img text NOT NULL,
+categoria_name text NOT NULL,
+composition text NOT NULL,
+manufacturer text NOT NULL,
+price int(255) NOT NULL,
+quantity int(255) NOT NULL
+);
+CREATE TABLE Orders
+(ID INT PRIMARY KEY AUTO_INCREMENT,
+name_Byuer text NOT NULL,
+code_Byuer int(255) NOT NULL,
+name_Napitki text NOT NULL,
+code_Napitki int(255) NOT NULL,
+Purchase_date date NOT NULL,
+FOREIGN KEY (code_Byuer) REFERENCES Byuer (ID),
+FOREIGN KEY (code_Napitki) REFERENCES Napitki (ID)
+);

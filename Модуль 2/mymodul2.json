@@ -1,0 +1,28 @@
+{
+    "first_name": "Ivan",
+    "last_name": "Ivanov",
+    "phone": "89001234567",
+    "document_number": "7567999222",
+    "password": "paSSword",
+    
+    "Successful": {
+        "204": "Status: 204",
+        "200": "Status: 200"
+    },
+    
+    "error": {
+        "code": 422,
+        "message": "Validation error",
+        "errors": {
+            "first_name": ["Пустое поле first_name"],
+            "last_name": ["Пустое поле last_name"],
+            "phone": ["Пустое поле phone", "Номер телефона занят"],
+            "document_number": ["Пустое поле document_number", "document_number заполняется 10 цифрами", "document_number должна состоять из цифр"],
+            "password": ["Пустое поле password"]
+        }
+    },
+    "data": {
+      "token": "<сгенерированный token>"
+    }
+     
+}

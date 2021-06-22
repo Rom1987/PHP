@@ -1,0 +1,7 @@
+{
+    "0": {
+        "menu": "\u0424\u0430\u0439\u043b",
+        "commands": [{ "title": "\u041d\u043e\u0432\u044b\u0439", "action": "CreateDoc" }, { "title": "\u041e\u0442\u043a\u0440\u044b\u0442\u044c", "action": "OpenDoc" }, { "title": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c", "action": "CloseDoc" }]
+    },
+    "commands": [{ "title": "10" }, { "title": "10" }]
+}
