@@ -1,0 +1,44 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Off-canvas component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+.hook-offcanvas() {}
+
+
+/* Sub-object `uk-offcanvas-bar`
+ ========================================================================== */
+
+.hook-offcanvas-bar() {	box-shadow: 1px 1px 2px @theme_offcanvas-bar-box-shadow; }
+
+
+/* Panel in offcanvas
+ ========================================================================== */
+
+.hook-offcanvas-panel() {}
+
+
+/* Search in offcanvas
+ ========================================================================== */
+
+.hook-offcanvas-search-field() {
+	padding: 0 10px !important;
+	border: @theme_offcanvas-search-field-border-width solid @theme_offcanvas-search-field-border;
+	border-radius: @theme_offcanvas-search-field-border-radius;
+	font-weight: inherit;
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+  	-webkit-background-clip: padding; 
+	
+	&:focus { border-color: @theme_offcanvas-search-field-focus-border; }
+
+}
+
+.uk-offcanvas .uk-search:before { display: none; }
+

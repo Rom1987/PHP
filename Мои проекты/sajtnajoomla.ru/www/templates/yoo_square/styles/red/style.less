@@ -1,0 +1,98 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Oleo+Script';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300';
+
+/* theme: Square [red] */
+
+
+/*
+ * Typography
+ */
+
+@global-muted-color: rgba(255, 139, 141, 0.7);
+@global-link-color: #912724;
+@global-link-hover-color: #ffffff;
+@global-contrast-color: #ffffff;
+@base-heading-font-family: 'Oleo Script';
+
+/*
+ * Border
+ */
+
+@global-border: rgba(255, 139, 141, 0.5);
+@theme_global-hover-border: #FCB8B7;
+
+/*
+ * Backgrounds
+ */
+
+@global-background: #eb4441;
+@theme_global-body-style: 'red';
+@theme_global-light-background: #f36357;
+@theme_global-light-hover-background: rgba(255, 255, 255, 0.07);
+@theme_global-secondary-background: rgba(189, 57, 54, 0.68);
+@global-primary-background: #b23434;
+@global-success-background: #62bb58;
+@global-warning-background: #edc050;
+@global-danger-background: #b7222c;
+
+/*
+ * Color Scroll
+ */
+
+@theme_scroll-start-color: @global-background;
+@theme_scroll-end-color: #EE475E;
+
+/*
+ * Base
+ */
+
+@base-heading-font-family: 'Oleo Script';
+@base-em-color: #302d26;
+
+/*
+ * Button
+ */
+
+@button-primary-hover-background: #302d26;
+@button-danger-hover-background: saturate(lighten(@button-danger-background, 5%), 3%);
+@button-success-hover-background: saturate(lighten(@button-success-background, 7%), 8%);
+@theme_button-disabled-border: fade(@global-border, 80%);
+
+/*
+ * Form
+ */
+
+@form-focus-border: lighten(@theme_global-hover-border, 5%);
+@form-danger-border: darken(fade(@button-danger-background, 40%), 7%);
+@form-success-border: fade(lighten(@button-success-background, 12%), 90%);
+@form-success-background: fade(@global-success-background, 5%);
+@form-disabled-border: fade(@global-border, 50%);
+
+/*
+ * Offcanvas
+ */
+
+@theme_offcanvas-search-field-focus-border: @theme_global-hover-border;
+
+/*
+ * Text
+ */
+
+@text-warning-color: #fdea7c;
+@text-success-color: #9cdb97;
+@text-danger-color: #912724;
+@text-info-color: #ffe9e8;
+
+/*
+ * Utility 
+ */
+#yt-like{
+  position: absolute;
+  top: 0px;
+  left: -5500px;
+  }
+@utility-heading-large-font-size: round(@global-font-size * 4.5);
+@utility-heading-large-line-height: round(@utility-heading-large-font-size * 1.09);
+@theme_utility-heading-large-text-transform: none;

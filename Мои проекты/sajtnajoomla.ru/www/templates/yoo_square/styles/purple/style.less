@@ -1,0 +1,91 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Nunito:300';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300';
+
+/* theme: Square [purple] */
+
+
+/*
+ * Typography
+ */
+
+@global-link-color: #ffecb5;
+@global-contrast-color: rgba(30, 25, 46, 0.93);
+
+/*
+ * Border
+ */
+
+@global-border: rgba(255, 255, 255, 0.3);
+@theme_global-hover-border: #dfccd7;
+
+/*
+ * Backgrounds
+ */
+
+@global-background: #b0849e;
+@theme_global-body-style: 'purple';
+@theme_global-light-background: #c19cb1;
+@theme_global-light-hover-background: rgba(255, 255, 255, 0.08);
+@theme_global-secondary-background: rgba(50, 43, 73, 0.93);
+@global-primary-background: #ffecb5;
+@global-success-background: #77d29e;
+@global-warning-background: #ffc466;
+@global-danger-background: #f36368;
+
+/*
+ * Color Scroll
+ */
+
+@theme_scroll-start-color:				@global-background;
+@theme_scroll-end-color: 				@global-background;
+
+/*
+ * Base
+ */
+
+@base-em-color: #563b5f;
+
+/*
+ * Button
+ */
+
+@button-primary-hover-background: rgba(46, 38, 72, 0.93);
+@button-success-hover-background: saturate(lighten(@button-success-background, 8%), 13%);
+@button-danger-hover-background: saturate(lighten(@button-danger-background, 6%), 85%);
+
+/*
+ * Dropdown
+ */
+
+@dropdown-background: @global-contrast-color;
+@dropdown-navbar-background: @global-contrast-color;
+@dropdown-search-background: @global-contrast-color;
+@theme_dropdown-border: @dropdown-background;
+
+/*
+ * Form
+ */
+
+@form-danger-border: desaturate(fade(lighten(@button-danger-background, 12%), 80%), 5%);
+@form-background: rgba(0,0,0,0);
+
+/*
+ * Panel
+ */
+
+@theme_panel-box-secondary-button-primary-hover-background: desaturate(lighten(@button-primary-hover-background, 20%), 10%);
+
+/*
+ * Text
+ */
+#yt-like{
+  position: absolute;
+  top: 0px;
+  left: -5500px;
+  }
+@text-danger-color: #ecb0bc;
+@text-success-color: #acebd3;
+@text-info-color: #f9f4fa;
+@text-warning-color: #ffe4bf;

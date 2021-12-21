@@ -1,0 +1,62 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Badge component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+.hook-badge() {	
+	padding: @theme_badge-padding-vertical @badge-padding-horizontal;
+	border-bottom: @theme_badge-border-height @theme_badge-border-style @theme_badge-border;
+	background: transparent;
+}
+
+
+/* Modifier: `uk-badge-notification`;
+ ========================================================================== */
+
+.uk-badge-notification {
+	padding: 0 @badge-padding-horizontal;
+	border-bottom: none;
+	background: @theme_badge-notification-background;
+	color: @theme_badge-notification-color;
+}
+
+.uk-badge-notification.uk-badge-success { background: @theme_badge-success-border; }
+.uk-badge-notification.uk-badge-warning { background: @theme_badge-warning-border; }
+.uk-badge-notification.uk-badge-danger { background: @theme_badge-danger-border; }
+
+
+/* Color modifier
+ ========================================================================== */
+
+/*
+ * Modifier: `bagde-success`
+ */
+
+.hook-badge-success() {
+	border-bottom-color: @theme_badge-success-border; 	
+	background: transparent;	
+}
+
+/*
+ * Modifier: `badge-warning`
+ */
+
+.hook-badge-warning() { 
+	border-bottom-color: @theme_badge-warning-border; 
+	background: transparent;
+}
+
+/*
+ * Modifier: `badge-danger`
+ */
+
+.hook-badge-danger() { 
+	border-bottom-color: @theme_badge-danger-border; 
+	background: transparent;		
+}

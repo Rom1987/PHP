@@ -1,0 +1,11 @@
+User-agent:* # правило о том, каким роботам необходимо просмотреть инструкции, описанные в файле robots.txt
+Allow: /registration.php # разрешено
+Allow: /products.php.php #разрешает сканировать какой-либо файл/директиву/страницу
+Disallow: /image/*.jpg$ # неразрешено
+Disallow: /css/*.css$ #дает рекомендацию, какую именно информацию не стоит сканировать
+Disallow: /table_products.php
+Disallow: /table_orders.php
+Disallow: /table_people.php
+Disallow: /mysql.php
+Host: d98569c5.beget.tech  #ссылка на сайт
+Crawl-delay: 3    #параметр, с помощью которого можно задать период, через который будут загружаться страницы сайта. 

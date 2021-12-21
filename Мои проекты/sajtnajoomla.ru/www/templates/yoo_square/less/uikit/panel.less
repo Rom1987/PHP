@@ -1,0 +1,114 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Panel component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+
+/* Sub-object: `uk-panel-title`
+ ========================================================================== */
+
+.hook-panel-title() {}
+
+
+/* Sub-object: `uk-panel-badge`
+ ========================================================================== */
+
+.hook-panel-badge() {}
+
+
+/* Modifier: `uk-panel-box`
+ ========================================================================== */
+
+.hook-panel-box() {
+	border: @theme_panel-box-border-width @theme_panel-box-border-style @theme_panel-box-border;
+	border-radius: @theme_panel-box-border-radius;
+}
+
+/*
+ * Nav in panel
+ */
+
+.uk-panel-box .uk-nav-side { margin: 0; }
+
+/*
+ * Sub-modifier: `uk-panel-box-primary`
+ */
+
+.hook-panel-box-primary() {
+
+	border: none;
+	border-radius: @theme_panel-box-large-border-radius;
+
+	.uk-button:not(.uk-button-primary):not(.uk-button-success):not(.uk-button-danger) {
+
+		border-color: @theme_panel-box-primary-button-border;
+
+        &:hover { 
+        	background: fade(@theme_global-light-hover-background, 10%);
+        	border-color: @theme_panel-box-primary-button-hover-border;
+        }
+
+    }
+
+}
+
+/*
+ * Sub-modifier: `uk-panel-box-secondary`
+ */
+
+.hook-panel-box-secondary() {
+
+	border: none;
+	border-radius: @theme_panel-box-large-border-radius;
+
+ 	a { color: @theme_panel-box-secondary-link-color; }
+
+	> a:hover,
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @theme_panel-box-secondary-hover-link-color; }
+	
+	.uk-button:not(.uk-button-primary):not(.uk-button-success):not(.uk-button-danger) {
+
+		border-color: @theme_panel-box-secondary-button-border;
+        color: @theme_panel-box-secondary-button-color;
+
+        &:hover { 
+        	background: @theme_panel-box-secondary-button-hover-background;
+        	border-color: @theme_panel-box-secondary-button-hover-border;
+        }
+
+    }
+
+    .uk-button-primary {
+
+        &:hover { background: @theme_panel-box-secondary-button-primary-hover-background; }
+
+    }
+	
+	.uk-badge { color: @theme_panel-box-secondary-badge-color; }
+
+}
+
+
+/* Modifier: `uk-panel-header`
+ ========================================================================== */
+
+.hook-panel-header() { 
+	border-bottom-width: @theme_panel-header-border-height;
+	border-bottom-style: @theme_panel-header-border-style; 
+}
+
+
+/* Modifier: `uk-panel-divider`
+ ========================================================================== */
+
+.uk-panel + .uk-panel-divider:before { 
+	border-top-width: @theme_panel-divider-height;
+	border-top-style: @theme_panel-divider-border-style; 
+}

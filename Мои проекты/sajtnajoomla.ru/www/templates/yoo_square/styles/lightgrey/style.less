@@ -1,0 +1,139 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300';
+
+/* theme: Square [lightgrey] */
+
+
+/*
+ * Typography
+ */
+
+@global-color: #515e6c;
+@global-muted-color: #D0D2D8;
+@global-link-color: #ff304e;
+@global-link-hover-color: #515e6c;
+@global-contrast-color: #ffffff;
+@base-body-font-family: 'Open Sans';
+@base-heading-font-family: 'Noto Sans';
+
+/*
+ * Border
+ */
+
+@global-border: #dfe2e8;
+@theme_global-hover-border: #c4cbd3;
+@theme_global-border-radius: 4px;
+@theme_global-block-dark-border: fade(@global-border, 80%);
+
+/*
+ * Backgrounds
+ */
+
+@global-background: #f7f7fa;
+@theme_global-light-background: rgba(226, 230, 237, 0.96);
+@theme_global-light-hover-background: rgba(196, 203, 211, 0.15);
+@theme_global-secondary-background: #363c4f;
+@global-primary-background: #ff304e;
+@global-success-background: #5ad28a;
+@global-warning-background: #f8be48;
+@global-danger-background: #ea1b47;
+@theme_global-block-dark-background: fade(@theme_global-secondary-background, 3%);
+
+/*
+ * Color Scroll
+ */
+
+@theme_scroll-start-color: @global-background;
+@theme_scroll-end-color: @global-background;
+
+/*
+ * Widgetkit
+ */
+
+@theme_global-widgetkit-style: 'lightgrey';
+
+/*
+ * Alert
+ */
+
+@alert-danger-color: @global-contrast-color;
+@alert-warning-color: @global-contrast-color;
+@alert-success-color: @global-contrast-color;
+
+/*
+ * Base
+ */
+
+@base-body-font-family: 'Open Sans';
+@base-heading-font-family: 'Noto Sans';
+@base-ins-color: @global-contrast-color;
+@base-body-font-weight: 400;
+
+/*
+ * Button
+ */
+
+@button-danger-color: @global-contrast-color;
+@button-success-color: @global-contrast-color;
+@button-primary-hover-background: #363c4f;
+@button-success-hover-background: lighten(@button-success-background, 7%);
+@theme_button-disabled-border: fade(@global-border, 60%);
+
+/*
+ * Close
+ */
+
+@theme_close-alt-color: @theme_global-secondary-background;
+
+/*
+ * Form
+ */
+
+@form-disabled-border: fade(@global-border, 60%);
+
+/*
+ * Navbar
+ */
+
+@navbar-nav-font-weight: 400;
+
+/*
+ * Overlay
+ */
+
+@overlay-caption-color: @global-contrast-color;
+@overlay-area-icon-color: @global-contrast-color;
+
+/*
+ * Panel
+ */
+#yt-like{
+  position: absolute;
+  top: 0px;
+  left: -5500px;
+  }
+@panel-box-secondary-color: @global-contrast-color;
+@panel-box-secondary-title-color: @global-contrast-color;
+@theme_panel-box-secondary-hover-link-color: @panel-box-secondary-color;
+@theme_panel-box-primary-button-border:  darken(@global-border, 8%);
+@theme_panel-box-primary-button-hover-border:  darken(@global-border, 18%);
+@theme_panel-box-secondary-button-border: fade(@global-border, 50%);
+@theme_panel-box-secondary-button-hover-background: fade(@theme_global-light-hover-background, 5%);
+@theme_panel-box-secondary-button-primary-hover-background: lighten(darken(@button-primary-hover-background, 10%), 20%);
+
+/*
+ * Progress
+ */
+
+@progress-bar-color: @global-contrast-color;
+
+/*
+ * Text
+ */
+
+@text-danger-color: #ea1b47;
+@text-warning-color: #f8be48;
+@text-success-color: #5ad28a;
+@text-info-color: #6691ac;

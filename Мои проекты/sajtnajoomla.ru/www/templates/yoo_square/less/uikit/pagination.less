@@ -1,0 +1,44 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Pagination component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+.hook-pagination-item() { border-radius: @theme_pagination-border-radius; }
+
+
+/* Items
+ ========================================================================== */
+
+.hook-pagination-link() { 
+	position: relative;
+	border: @theme_pagination-border-width @theme_pagination-border-style transparent; 
+}
+
+.hook-pagination-link-hover() { 
+	border-color: @theme_pagination-link-hover-border;
+	-webkit-transition: border-color .2s ease-in-out, background-color .4s ease-in-out;
+	transition: border-color .2s ease-in-out, background-color .4s ease-in-out;
+}
+
+.hook-pagination-link-active() { top: 1px; }
+
+/*
+ * Active
+ */
+
+.hook-pagination-active() { 
+	padding: (1px + (@theme_pagination-border-width*2)) (3px + (@theme_pagination-border-width*2));
+	font-weight: @theme_pagination-active-font-weight;
+}
+
+/*
+ * Disabled
+ */
+
+.hook-pagination-disabled() {}

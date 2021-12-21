@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension  type="module" version="2.5"	method="upgrade">
+	<name>SocShare - social buttons</name>
+	<author>SocExt</author>
+	<creationDate>October 2015</creationDate>
+	<copyright>Copyright 2013 SocExt.com All rights reserved!</copyright>
+	<license>license GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>admin@socext.com</authorEmail>
+	<authorUrl>www.socext.com</authorUrl>
+	<version>2.1</version>
+	<description>MOD_SOCSHARE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_socshare">mod_socshare.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_socshare.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_socshare.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_socshare.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_socshare.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="spacer1" type="spacer" hr="true" />
+			<field name="url" 
+					type="radio" 
+					default="1" 
+					label="MOD_SOCSHARE_URL" 
+					description="MOD_SOCSHARE_URL_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+			<field type="text" name="link" description="MOD_LINK_DESC" label="MOD_LINK" size="45"/>
+				<field type="text" name="txt" description="MOD_TEXT_DESC" label="MOD_TEXT" size="45"/>
+				<field name="soc_fs" type="text" default="" label="MOD_SOCSHARE_FONTSIZE" description="MOD_SOCSHARE_FONTSIZE_DESC" size="45"/>	
+				<field name="ogmeta" 
+					type="radio" 
+					default="1" 
+					label="MOD_SOCSHARE_OGMETA" 
+					description="MOD_SOCSHARE_OGMETA_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+				<field type="text" name="title" description="MOD_TITLE_DESC" label="MOD_TITLE" size="45"/>
+				<field type="text" name="desc" description="MOD_DESC_DESC" label="MOD_DESC" size="45"/>
+				<field name="img" type="media"
+					label="MOD_SOCSHARE_IMG" description="MOD_SOCSHARE_IMG_DESC" />
+					
+					<field name="spacer2" type="spacer" hr="true" />
+					<field name="spacer3" type="spacer" class="text" label="--------FACEBOOK LIKE--------"/>
+					
+				<field name="fblike" 
+					type="radio"
+					default="1" 
+					label="MOD_SOCSHARE_SHOW_LIKE_BUTTON" 
+					description="MOD_SOCSHARE_SHOW_LIKE_BUTTON_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+				<field name="fblike_width" type="text" 
+					default="100" 
+					label="MOD_SOCSHARE_FB_WIDTH" 
+					description="MOD_SOCSHARE_FB_WIDTH_DESC" />
+				<field name="fblike_lang" 
+					type="list" 
+					default="en_US" 
+					label="MOD_SOCSHARE_FB_LANG" 
+					description="MOD_SOCSHARE_FB_LANG_DESC">
+					<option value="af_ZA">Afrikaans</option>
+			<option value="ar_AR">Arabic</option>
+			<option value="ay_BO">Aymara</option>
+			<option value="az_AZ">Azeri</option>
+			<option value="be_BY">Belarusian</option>
+			<option value="bg_BG">Bulgarian</option>
+			<option value="bn_IN">Bengali</option>
+			<option value="bs_BA">Bosnian</option>
+			<option value="ca_ES">Catalan</option>
+			<option value="ck_US">Cherokee</option>
+			<option value="cs_CZ">Czech</option>
+			<option value="cy_GB">Welsh</option>
+			<option value="da_DK">Danish</option>
+			<option value="de_DE">German</option>
+			<option value="el_GR">Greek</option>
+			<option value="en_GB">English (UK)</option>
+			<option value="en_PI">English (Pirate)</option>
+			<option value="en_UD">English (Upside Down)</option>
+			<option value="en_US">English [US]</option>
+			<option value="eo_EO">Esperanto</option>
+			<option value="es_CL">Spanish (Chile)</option>
+			<option value="es_CO">Spanish (Colombia)</option>
+			<option value="es_ES">Spanish (Spain)</option>
+			<option value="es_LA">Spanish</option>
+			<option value="es_MX">Spanish (Mexico)</option>
+			<option value="es_VE">Spanish (Mexico)</option>
+			<option value="et_EE">Estonian</option>
+			<option value="eu_ES">Basque</option>
+			<option value="fa_IR">Persian</option>
+			<option value="fb_LT">Leet Speak</option>
+			<option value="fi_FI">Finnish</option>
+			<option value="fo_FO">Faroese</option>
+			<option value="fr_CA">French (Canada)</option>
+			<option value="fr_FR">French (France)</option>
+			<option value="ga_IE">Irish</option>
+			<option value="gl_ES">Galician</option>
+			<option value="gn_PY">Guarani</option>
+			<option value="gu_IN">Gujarati</option>
+			<option value="he_IL">Hebrew</option>
+			<option value="hi_IN">Hindi</option>
+			<option value="hr_HR">Croatian</option>
+			<option value="hu_HU">Hungarian</option>
+			<option value="hy_AM">Armenian</option>
+			<option value="id_ID">Indonesian</option>
+			<option value="is_IS">Icelandic</option>
+			<option value="it_IT">Italian</option>
+			<option value="ja_JP">Japanese</option>
+			<option value="jv_ID">Javanese</option>
+			<option value="ka_GE">Georgian</option>
+			<option value="kk_KZ">Kazakh</option>
+			<option value="km_KH">Khmer</option>
+			<option value="kn_IN">Kannada</option>
+			<option value="ko_KR">Korean</option>
+			<option value="ku_TR">Kurdish</option>
+			<option value="la_VA">Latin</option>
+			<option value="li_NL">Limburgish</option>
+			<option value="lt_LT">Lithuanian</option>
+			<option value="lv_LV">Latvian</option>
+			<option value="mg_MG">Malagasy</option>
+			<option value="mk_MK">Macedonian</option>
+			<option value="ml_IN">Malayalam</option>
+			<option value="mn_MN">Mongolian</option>
+			<option value="mr_IN">Marathi</option>
+			<option value="ms_MY">Malay</option>
+			<option value="mt_MT">Maltese</option>
+			<option value="nb_NO">Norwegian (bokmal)</option>
+			<option value="ne_NP">Nepali</option>
+			<option value="nl_BE">Dutch (Belgie)</option>
+			<option value="nl_NL">Dutch</option>
+			<option value="nn_NO">Norwegian (nynorsk)</option>
+			<option value="pa_IN">Punjabi</option>
+			<option value="pl_PL">Polish</option>
+			<option value="ps_AF">Pashto</option>
+			<option value="pt_BR">Portuguese (Brazil)</option>
+			<option value="pt_PT">Portuguese (Portugal)</option>
+			<option value="qu_PE">Quechua</option>
+			<option value="rm_CH">Romansh</option>
+			<option value="ro_RO">Romanian</option>
+			<option value="ru_RU">Russian</option>
+			<option value="sa_IN">Sanskrit</option>
+			<option value="se_NO">Northern Sami</option>
+			<option value="sk_SK">Slovak</option>
+			<option value="sl_SI">Slovenian</option>
+			<option value="so_SO">Somali</option>
+			<option value="sq_AL">Albanian</option>
+			<option value="sr_RS">Serbian</option>
+			<option value="sv_SE">Swedish</option>
+			<option value="sw_KE">Swahili</option>
+			<option value="sy_SY">Syriac</option>
+			<option value="ta_IN">Tamil</option>
+			<option value="te_IN">Telugu</option>
+			<option value="tg_TJ">Tajik</option>
+			<option value="th_TH">Thai</option>
+			<option value="tl_PH">Filipino</option>
+			<option value="tl_ST">Klingon</option>
+			<option value="tr_TR">Turkish</option>
+			<option value="tt_RU">Tatar</option>
+			<option value="uk_UA">Ukrainian</option>
+			<option value="ur_PK">Urdu</option>
+			<option value="uz_UZ">Uzbek</option>
+			<option value="vi_VN">Vietnamese</option>
+			<option value="xh_ZA">Xhosa</option>
+			<option value="yi_DE">Yiddish</option>
+			<option value="zh_CN">Simplified Chinese (China)</option>
+			<option value="zh_HK">Traditional Chinese (Hong Kong)</option>
+			<option value="zh_TW">Traditional Chinese (Taiwan)</option>
+			<option value="zu_ZA">Zulu</option>
+				</field>
+				
+				<field name="spacer4" type="spacer" hr="true" />
+<field name="spacer5" type="spacer" class="text" label="--------GOOGLE+--------"/>
+
+				<field name="Google" 
+					type="radio" 
+					default="1" 
+					label="MOD_SOCSHARE_SHOW_GOOGLE_BUTTON" 
+					description="MOD_SOCSHARE_SHOW_GOOGLE_BUTTON_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+				<field name="gplus_width" type="text" 
+					default="80" 
+					label="MOD_SOCSHARE_GP_WIDTH" 
+					description="MOD_SOCSHARE_GP_WIDTH_DESC" />
+				<field name="plusLang" type="list" default="en" label="MOD_SOCSHARE_GOOGLE_LANG" description="MOD_SOCSHARE_GOOGLE_LANG_DESC" >
+            <option value="ar">Arabic</option>
+            <option value="bg">Bulgarian</option>
+            <option value="ca">Catalan</option>
+            <option value="zh">Chinese</option>
+            <option value="zh_CN">Chinese (China)</option>
+            <option value="zh_HK">Chinese (Hong Kong)</option>
+            <option value="zh_TW">Chinese (Taiwan)</option>
+            <option value="hr">Croatian</option>
+            <option value="cs">Czech</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="en">English</option>
+            <option value="en_IN">English (India)</option>
+            <option value="en_IE">English (Ireland)</option>
+            <option value="en_SG">English (Singapore)</option>
+            <option value="en_ZA">English (South Africa)</option>
+            <option value="en_GB">English (United Kingdom)</option>
+            <option value="fil">Filipino</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="de_CH">German (Switzerland)</option>
+            <option value="el">Greek</option>
+            <option value="iw">Hebrew</option>
+            <option value="hu">Hungarian</option>
+            <option value="in">Indonesian</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="kn">Kannada</option>
+            <option value="ko">Korean</option>
+            <option value="lv">Latvian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="no">Norwegian</option>
+            <option value="fa">Persian</option>
+            <option value="pl">Polish</option>
+            <option value="pt_BR">Portuguese (Brazil)</option>
+            <option value="pt_PT">Portuguese (Portugal)</option>
+            <option value="ro">Romanian</option>
+            <option value="ru">Russian</option>
+            <option value="sr">Serbian</option>
+            <option value="sk">Slovak</option>
+            <option value="sl">Slovenian</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="gsw">Swiss German</option>
+            <option value="th">Thai</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukrainian</option>
+            <option value="vi">Vietnamese</option>
+        </field>
+		<field name="spacer6" type="spacer" hr="true" />	
+<field name="spacer7" type="spacer" class="text" label="--------TWITTER--------"/>
+				<field name="twitter" 
+					type="radio" 
+					default="1" 
+					label="MOD_SOCSHARE_SHOW_TWITTER_BUTTON" 
+					description="MOD_SOCSHARE_SHOW_TWITTER_BUTTON_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+				<field name="twt_width" type="text" 
+					default="80" 
+					label="MOD_SOCSHARE_TWT_WIDTH" 
+					description="MOD_SOCSHARE_TWT_WIDTH_DESC" />
+				<field name="twitter_lang" 
+					type="list" 
+					default="en" 
+					label="MOD_SOCSHARE_LANG_TWITTER" 
+					description="MOD_SOCSHARE_LANG_TWITTER_DESC">
+					<option value="en">MOD_SOCSHARE_LANG_EN</option>
+					<option value="ru">MOD_SOCSHARE_LANG_RU</option>
+					<option value="es">MOD_SOCSHARE_LANG_ES</option>
+					<option value="it">MOD_SOCSHARE_TYPE_IT</option>
+					<option value="ko">MOD_SOCSHARE_TYPE_KO</option>
+					<option value="de">MOD_SOCSHARE_TYPE_DE</option>
+					<option value="pt">MOD_SOCSHARE_TYPE_PT</option>
+					<option value="tr">MOD_SOCSHARE_TYPE_TR</option>
+					<option value="fr">MOD_SOCSHARE_TYPE_FR</option>
+					<option value="ja">MOD_SOCSHARE_TYPE_JA</option>
+				</field>
+				<field type="text" name="twtext" description="MOD_TWTEXT_DESC" label="MOD_TWTEXT" size="45"/>
+				
+				<field name="spacer8" type="spacer" hr="true" />
+<field name="spacer9" type="spacer" class="text" label="--------VKONTAKTE--------"/>
+
+				<field name="Vkl" 
+					type="radio" 
+					default="1" 
+					label="MOD_SOCSHARE_SHOW_VK_BUTTON" 
+					description="MOD_SOCSHARE_SHOW_VK_BUTTON_DESC">
+					<option value="1">MOD_SOCSHARE_YES</option>
+					<option value="0">MOD_SOCSHARE_NO</option>
+				</field>
+				<field type="text" name="vkid" description="MOD_VKID_DESC" label="MOD_VKID" size="45"/>
+				<field name="vk_width" type="text" 
+					default="" 
+					label="MOD_SOCSHARE_VK_WIDTH" 
+					description="MOD_SOCSHARE_VK_WIDTH_DESC" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

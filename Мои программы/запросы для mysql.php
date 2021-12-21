@@ -1,14 +1,15 @@
 <?php
-function sql_query($db, $select, $from, $where) {
+function sql_query($db, $select, $from, $where)
+{
 
-    $link = mysqli_connect("localhost","root","","$db");
+    $link = mysqli_connect("localhost", "root", "", "$db");
     mysqli_query($link, "SET NAMES 'utf-8'");
-    
-    if ( !empty($where) ):
 
-       $query = mysqli_query($link, "SELECT $select FROM $from WHERE $where ");
+    if (!empty($where)):
 
-    else: 
+        $query = mysqli_query($link, "SELECT $select FROM $from WHERE $where ");
+
+    else:
 
         $query = mysqli_query($link, "SELECT $select FROM $from ");
 
@@ -18,4 +19,5 @@ function sql_query($db, $select, $from, $where) {
 
     mysqli_error($link);
 }
+
 ?>

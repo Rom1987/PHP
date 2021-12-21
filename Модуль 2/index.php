@@ -75,7 +75,7 @@
 
             else:
 
-                echo 
+                echo '';
 
             endif;
         

@@ -1,0 +1,73 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Base component
+ *
+ ========================================================================== */
+
+
+/* Body
+ ========================================================================== */
+
+.hook-base-body() {}
+
+
+/* Text-level semantics
+========================================================================== */
+
+/*
+ * Links
+ */
+
+a {
+	-webkit-transition: background-color .2s ease-in-out, color.2s ease-in-out;
+	transition: background-color .2s ease-in-out, color.2s ease-in-out;
+}
+
+mark { font-weight: normal; }
+
+/*
+ * Emphasize
+ */
+
+em { font-weight: normal; }
+
+
+/* Headings
+ ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: @theme_base-heading-margin-bottom; }
+
+@media (max-width: @breakpoint-small-max) {
+
+	h1, .uk-h1 {
+	font-size: @theme_base-h1-phone-font-size;
+	line-height: @theme_base-h1-phone-line-height;
+	}
+
+}
+
+/* Horizontal rule
+ ========================================================================== */
+
+hr { border-top-width: @theme_global-border-width; }
+
+
+/* Code and preformatted text
+ ========================================================================== */
+
+.hook-base-code() {
+	border-radius: @theme_base-code-border-radius;	
+	padding: 2px 4px;
+	border: @theme_base-code-border-width @theme_base-code-border-style @theme_base-code-border;
+}
+
+.hook-base-code-reset() { 
+	border: none;
+	background: none;
+}
+
+.hook-base-pre() {
+	border: @theme_base-pre-border-width @theme_base-pre-border-style @theme_base-pre-border;
+	border-radius: @theme_global-border-radius;
+}

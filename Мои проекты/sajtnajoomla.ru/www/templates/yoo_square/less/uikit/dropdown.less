@@ -1,0 +1,62 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Dropdown component
+ *
+ ========================================================================== */
+
+
+/* Component
+ ========================================================================== */
+
+.hook-dropdown() {
+	padding: @dropdown-padding;
+	border: @theme_dropdown-border-width solid @theme_dropdown-border;
+	border-radius: @theme_global-border-radius;
+}
+
+/* Grid and panel in dropdown
+ ========================================================================== */
+
+/*
+ * Column divider
+ */
+
+.uk-dropdown:not(.uk-dropdown-stack) > .uk-grid > [class*='uk-width-']:nth-child(n+2) { 
+	border-left-width: @theme_dropdown-divider-border-width; 
+	border-left-style: @theme_dropdown-divider-border-style; 
+}
+
+
+/* Dependencies `uk-nav-dropdown`
+ ========================================================================== */
+
+.uk-dropdown .uk-nav-dropdown,
+.uk-dropdown .uk-nav-navbar { padding: 5px @dropdown-padding; }
+
+
+/* Modifier `uk-dropdown-small`
+ ========================================================================== */
+
+.uk-dropdown-small { padding: (@dropdown-small-padding + 10px) @dropdown-small-padding; }
+
+
+/* Modifier: `uk-dropdown-navbar`
+ ========================================================================== */
+
+.hook-dropdown-navbar() {
+	border: @theme_dropdown-navbar-border-width solid @theme_dropdown-border;
+	border-radius: @theme_global-border-radius;
+	font-size: @global-font-size - 1px;
+	line-height: @global-line-height - 2px; 
+}
+
+
+/* Modifier: `uk-dropdown-search`
+ ========================================================================== */
+
+.hook-dropdown-search() { 
+
+	.uk-nav { padding: 5px @dropdown-padding; }
+
+}
